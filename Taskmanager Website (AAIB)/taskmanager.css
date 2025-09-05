@@ -1,0 +1,126 @@
+/*  title can be moved without using grid otherwise no */
+#title{
+text-align: center;
+font-size: 3vw;
+}
+
+/* form itself */
+#inputbutton{
+  width: 30%;
+display: grid;
+grid-template-columns: 1fr auto; 
+text-align: center;
+margin: 0 auto;
+
+
+}
+/* to make the input a lined one */
+#newtask{
+font-size: 12px;
+ border: none; 
+      border-bottom: 1.5px solid #333; 
+      padding: 2px 0; 
+      width:95%;
+}
+
+
+/* finish button */
+#finish{
+border-radius: 6px;
+text-decoration:  rgb(255, 255, 255);
+color: white;
+background-color: rgb(28, 26, 26);
+}
+
+/* grid itself */
+.Grid {
+  display: grid;
+  width: 30%;
+  background-color: rgb(255, 255, 255);
+  grid-template-columns: auto; 
+  gap:  20px; 
+  /* make the grid divs in the center  */
+  /* justify-content: center;  */
+/* to make pink closer to words not take all page*/
+  padding: 8px;
+  border-radius: 40px;
+  margin: 0 auto;
+/* to move the grid to middle */
+}
+
+
+/* divs below grid */
+.Grid >div{
+  background-color: rgb(255, 255, 255);
+  text-align: left;
+  border-radius: 1vw;
+    padding: 10px;
+    font-size: 25px;
+    border: 1px solid black;
+    display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 1vw;
+  font-size: 2vw;
+}  
+
+
+.buttons{
+background-color: rgb(255, 255, 255);
+border-radius: 20vw;
+width: 1.5vw;
+height: 1.5vw;
+padding: 0px;
+margin-left: auto;
+}
+
+.done{
+background-color: rgb(255, 255, 255);
+border-radius: 20vw;
+width: 1.5vw;
+height: 1.5vw;
+padding: 0px;
+/* margin-right: auto; */
+}
+
+.insidetext{
+font-size: 1vw;
+}
+
+#count{
+text-align: left;
+font-size: 1vw;
+}
+
+#quote{
+text-align: left;
+font-size: 1vw;
+font-family: 'Georgia', serif; /* Or any preferred serif font for quotes */
+  font-weight: lighter; /* Makes the font lighter */
+  font-style: italic; /* Commonly used for quotes */
+  color: #555; /* A light grey color for the text */
+}
+.secondgrid{
+display: grid;
+width: 30%;
+grid-template-columns: auto; 
+justify-content: center;  
+align-items: center;
+padding: 1px; /* makes how close the div is to the above */
+  border-radius: 40px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.secondgrid >div{
+  background-color: rgb(255, 255, 255);
+  text-align: left;
+
+    padding: 1px;
+    font-size: 25px;
+  align-items: center;
+  gap: 20px;
+  height: 1vw;
+  font-size: 2vw;
+}
+

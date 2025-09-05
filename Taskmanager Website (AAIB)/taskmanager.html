@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TaskManager</title>
+ <link rel="icon" href="./images/taskmang.png" type="image/x-icon">
+</head>
+<body>
+<!-- title -->
+<h3 id="title" >Your To Do List<h3>
+ 
+
+<!--linking css to html-->
+<link href="taskmanager.css" rel="stylesheet">
+
+
+<!-- creating the form -->
+<div>
+        <div id="inputbutton">
+            <input type="text" name="task" id="newtask" placeholder="Add new task" required>
+            <button type="button" id="finish" onclick="addtask()">+</button>
+        </div>
+</div>
+
+
+
+
+<!-- the grid -->
+<div class="Grid" id="grid" >
+
+    <div id="firsttask" class="alldivs">
+        <img class="done" onclick="taskdone(this)" src="./images/verified.png">
+        <p class="insidetext">Work</p>
+        <img src="./images/reject.png" class="buttons" onclick="removetask(this)">
+    </div>
+    
+    <div id="secondtask" class="alldivs"> 
+        <img class="done" onclick="taskdone(this)" src="./images/verified.png">
+        <p class="insidetext">Eat</p>
+        <img src="./images/reject.png" class="buttons" onclick="removetask(this)">
+    </div>
+
+    <div id="thirdtask" class="alldivs">
+        <img class="done" onclick="taskdone(this)" src="./images/verified.png">
+        <p class="insidetext">Pray</p>
+        <img src="./images/reject.png" class="buttons" onclick="removetask(this)">
+    </div>
+    
+</div>
+
+
+<div class="secondgrid">
+    <div>
+   <p id="count">Your remaining tasks are : 3 <span id="span" src="totalcount()"></span></p>
+   <address id="quote">"Time is really the only capital that any human being has, and the only thing he can't afford to lose" -Thomas Edison.</address>
+
+    </div>
+</div>
+
+
+<!-- linking javascript to html -->
+<script src="managerhelper.js"> </script>
+
+
+
+</body>
+</html>
